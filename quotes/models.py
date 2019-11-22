@@ -37,7 +37,13 @@ class Post(models.Model):
     draft = models.BooleanField(default=False)
     slug = models.SlugField(unique=True, null=True, blank=True)
 
-    published = models.DateTimeField(default=timezone.now, auto_now=False, auto_now_add=False)
+    published = models.DateTimeField(
+        default=timezone.now, 
+        auto_now=False, 
+        auto_now_add=False, 
+        blank=True,
+        unique=True
+        )
     date_posted = models.DateTimeField(default=timezone.now)
     user = models.ForeignKey(User, on_delete=models.CASCADE, default="")
     likes = models.IntegerField(default=0)
@@ -47,8 +53,6 @@ class Post(models.Model):
     img = models.ImageField(default='default.jpg', upload_to='quote_pics', verbose_name="Quote Img")
     img_author = models.CharField(max_length=50, default="", verbose_name="Photographer")
     img_author_url = models.URLField(max_length=100, default="", verbose_name="Photographer url")
-
-
 
     def __str__(self):
         return self.quote

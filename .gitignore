@@ -1,7 +1,6 @@
 .idea/
 .vscode/
 *.pyc
-media/
 venv/
 #v Created by https://www.gitignore.io
 
@@ -90,5 +89,3 @@ local_settings.py
 static_collected/
 collected_static/
 .env
-db.sqlite3
-

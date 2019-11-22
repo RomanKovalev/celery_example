@@ -130,3 +130,18 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'quotes-home'
 LOGIN_URL = 'login'
+
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+
+CELERY_BEAT_SCHEDULE = {
+    'CheckPost': {
+        'task': 'quotes.tasks.check_posts',
+        'schedule':10
+    }
+}
+
+DATETIME_FORMAT = 'd-m-Y H:m:s' 
+TIME_INPUT_FORMATS = ('%H:%M', )

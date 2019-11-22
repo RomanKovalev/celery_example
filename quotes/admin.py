@@ -22,7 +22,7 @@ class PostBackgroundInline(admin.TabularInline):
 class PostAdmin(admin.ModelAdmin):
     form = PostForm
     inlines = [PostCategoryInline, PostBackgroundInline]
-    list_display = ('quote', 'author', 'feature_qotd', 'featured_as_qotd')
+    list_display = ('quote', 'author', 'feature_qotd', 'featured_as_qotd', 'published')
     list_filter = ('date_posted',)
 
 
