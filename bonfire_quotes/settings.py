@@ -30,7 +30,7 @@ SECRET_KEY = '_n+8(+5oui42s0g#k%^(1)gajzs14$y#7sh_tp7)qv3!@wx$oi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['morning-hollows-37501.herokuapp.com']
+ALLOWED_HOSTS = ['morning-hollows-37501.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
