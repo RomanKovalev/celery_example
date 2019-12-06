@@ -1,7 +1,7 @@
 [
 {
   "model": "users.profile",
-  "pk": 7,
+  "pk": 1,
   "fields": {
     "user": 1,
     "image": "profile_pics/iPhone_X_Copy_nh3EOpf.png",
