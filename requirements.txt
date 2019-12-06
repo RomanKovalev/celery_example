@@ -14,7 +14,6 @@ klepto==0.1.8
 kombu==4.6.6
 more-itertools==7.2.0
 Pillow==6.2.1
-pkg-resources==0.0.0
 pox==0.2.7
 psycopg2==2.8.4
 pykakasi==1.2
