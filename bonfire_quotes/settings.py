@@ -132,7 +132,7 @@ LOGIN_REDIRECT_URL = 'quotes-home'
 LOGIN_URL = 'login'
 
 
-CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_BROKER_URL = REDIS_URL
 
 CELERY_BEAT_SCHEDULE = {
     'CheckPost': {
