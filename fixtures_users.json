@@ -12,7 +12,7 @@
 },
 {
   "model": "users.profile",
-  "pk": 9,
+  "pk": 8,
   "fields": {
     "user": 8,
     "image": "default.jpg",
