@@ -918,7 +918,7 @@
     "photographer": "travis Leslie",
     "img": "potd_default.jpg",
     "photographer_url": "http://instagram.com/brynna",
-    "slug": "close-of-photo-of-some-lea",
+    "slug": "close-of-photo-of-some-leaves-with-rain-drops",
     "draft": false,
     "published": "2019-11-13T23:44:16Z",
     "date_posted": "2019-11-13T23:44:16Z",
@@ -935,7 +935,7 @@
     "photographer": "Brynna Leslie",
     "img": "potd_default.jpg",
     "photographer_url": "http://instagram.com/brynna",
-    "slug": "how-to-make-100k-a-year-taking-photo",
+    "slug": "how-to-make-100k-a-year-taking-photos-and-making-videos",
     "draft": false,
     "published": "2019-11-13T23:55:21Z",
     "date_posted": "2019-11-13T23:55:21Z",
@@ -952,46 +952,13 @@
     "photographer": "travis Leslie",
     "img": "potd_default.jpg",
     "photographer_url": "http://instagram.com/brynna",
-    "slug": "how-to-make-100k-a-year-taking-phot7",
+    "slug": "how-to-make-100k-a-year-taking-photos-and-making-videos",
     "draft": false,
     "published": "2019-11-14T00:12:38Z",
     "date_posted": "2019-11-14T00:12:38Z",
     "user": 1,
     "feature_potd": false,
     "featured_as_potd": false
-  }
-},
-{
-  "model": "users.profile",
-  "pk": 7,
-  "fields": {
-    "user": 1,
-    "image": "profile_pics/iPhone_X_Copy_nh3EOpf.png",
-    "bio": "ddgdf",
-    "favoriteQuote": "dfdfdd",
-    "currentCity": "dfsdfd"
-  }
-},
-{
-  "model": "users.profile",
-  "pk": 9,
-  "fields": {
-    "user": 8,
-    "image": "default.jpg",
-    "bio": "",
-    "favoriteQuote": "",
-    "currentCity": ""
-  }
-},
-{
-  "model": "users.profile",
-  "pk": 10,
-  "fields": {
-    "user": 9,
-    "image": "default.jpg",
-    "bio": "",
-    "favoriteQuote": "",
-    "currentCity": ""
   }
 }
 ]
