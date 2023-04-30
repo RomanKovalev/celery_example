@@ -2,10 +2,7 @@
 from __future__ import absolute_import, unicode_literals
 from celery import shared_task
 
-from celery.task import periodic_task
-from celery.schedules import crontab
-from datetime import timedelta, datetime
-from time import sleep
+from datetime import datetime
 
 
 from .models import Post
@@ -29,8 +26,8 @@ def check_posts():
                 feature_qotd_post.feature_qotd = False
                 feature_qotd_post.featured_as_qotd = True
                 feature_qotd_post.save()
-            except:
-                pass
+            except Exception as e:
+                print(e)
             finally:
                 # set "post" as featured
                 post.feature_qotd = True
