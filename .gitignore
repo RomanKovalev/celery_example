@@ -2,6 +2,9 @@
 .vscode/
 *.pyc
 venv/
+celerybeat-schedule.bak
+celerybeat-schedule.dat
+celerybeat-schedule.dir
 #v Created by https://www.gitignore.io
 
 ### OSX ###
