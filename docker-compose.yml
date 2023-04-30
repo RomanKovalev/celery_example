@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app
+    ports:
+      - "8002:8000"
+
+  redis:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - "16379:6379"
+    command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
+
+  worker:
+    build: .
+    restart: always
+    command: bash -c "celery -A bonfire_quotes worker -B -l INFO"
