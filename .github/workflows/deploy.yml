@@ -25,6 +25,6 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd bike
+          cd celery_example
           git pull
           docker-compose up -d
